@@ -55,17 +55,16 @@ Then, add the following code to the event template part where you want the messa
 $billstatus = hent_billettstatus($post->ID);
 
 if ($billstatus['DTT_reg_limit'] <= $billstatus['DTT_sold']) {
-        $utsolgt = true;
 ?>
 
 <div class="tipsboks">
 <h2>No available spaces</h2>
 <p>Sorry, there are no available spaces for this event.</p>
 </div>
-```
 
 <?php
 }
+```
 
 ## (Step 3: Use the function elsewhere)
 
